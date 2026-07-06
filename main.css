@@ -1,7 +1,4 @@
-/* ============================================
-   CSS VARIABLES — our color theme lives here.
-   Change these once, and the whole site updates.
-============================================ */
+
 :root {
   --color-bg: #FFF8F0;        
   --color-primary: #4A2C2A;   
@@ -12,11 +9,7 @@
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Poppins', sans-serif;
 }
-
-/* ============================================
-   RESET — removes browser default spacing so
-   our layout is predictable everywhere.
-============================================ */
+/
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +23,7 @@ body {
   line-height: 1.6;
 }
 
-/* Smooth scroll when nav links are clicked (pure CSS, no JS) */
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,7 +54,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* Nav links also use FLEXBOX to sit in a row with equal spacing */
+
 .main-nav {
   display: flex;
   gap: 2rem;
@@ -89,7 +82,7 @@ h1, h2, h3 {
   text-align: center;
   padding: 2rem;
   background: linear-gradient(rgba(74,44,42,0.4), rgba(74,44,42,0.4)),
-              url('images/hero.jpg') center/cover no-repeat;
+              url('hero.jpg') center/cover no-repeat;
 }
 
 .hero-content h1 {
@@ -118,11 +111,6 @@ h1, h2, h3 {
 .btn-primary:hover {
   background-color: var(--color-primary);
 }
-
-/* ============================================
-   ABOUT SECTION — uses GRID because it's a
-   page-level 2-column layout (image + text).
-============================================ */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -215,7 +203,7 @@ h1, h2, h3 {
   text-align: left;
 }
 
-/* Info cards use FLEXBOX: icon beside text, each card in a column */
+
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -244,7 +232,7 @@ h1, h2, h3 {
   font-size: 0.95rem;
 }
 
-/* Form styled with FLEXBOX (fields stacked in a column) */
+
 .contact-form {
   display: flex;
   flex-direction: column;
